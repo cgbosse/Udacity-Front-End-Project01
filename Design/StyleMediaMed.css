@@ -1,0 +1,18 @@
+@media(min-width:900px){
+    .mainContainer{
+      display: grid;
+      width: 99%;
+      min-height: 100vh;
+      margin: auto;
+      grid-template-columns: repeat(1fr, 7);
+      grid-template-rows: repeat(minmax(auto, auto), 4);
+      grid-gap:;
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd"
+      "c01 c01 c01 c01 c01 c01 c02"
+      "c01 c01 c01 c01 c01 c01 c02"
+      "c01 c01 c01 c01 c01 c01 c02"
+      "ft ft ft ft ft ft ft";
+  
+    }
+    }

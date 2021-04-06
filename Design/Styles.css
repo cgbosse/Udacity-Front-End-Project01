@@ -1,0 +1,3 @@
+@import "StyleColor.css";
+@import "StyleMain.css";
+@import "StyleMediaMed.css" screen and (min-width: 900px);

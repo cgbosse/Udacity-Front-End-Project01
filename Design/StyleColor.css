@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+
+ /*Element coloring*/
+.blogname{
+    background-color: slategray;
+    color:white;
+  }
+  
+  .menu{
+    background-color: slategray;
+    color:white;
+  }
+  
+  .content01{
+    grid-area: c01;
+  }
+  
+  .content02{
+    grid-area: c02;
+  }
+  
+  .footer{
+    background-color: slategray;
+    color:white;
+  }

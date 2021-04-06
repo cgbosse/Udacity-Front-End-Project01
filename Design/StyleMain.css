@@ -1,7 +1,6 @@
+
+
 /*Base Styling*/
-body{
-   background-color: lightgray;
-}
 
 /*Fonts*/
 *{
@@ -47,10 +46,11 @@ body{
     min-height: 100vh;
     margin: auto;
     grid-template-columns: repeat(1fr, 7);
-    grid-template-rows: 2vh repeat(minmax(auto, auto), 3);
+    grid-template-rows: 10vh repeat(minmax(auto, auto), 4);
     grid-gap:;
     grid-template-areas: 
     "hd hd hd hd hd hd hd"
+    "c01 c01 c01 c01 c01 c01 c01"
     "c01 c01 c01 c01 c01 c01 c01"
     "c02 c02 c02 c02 c02 c02 c02"
     "ft ft ft ft ft ft ft";
@@ -119,7 +119,7 @@ body{
 }
 
 .content02{
-  padding: 5px;
+  padding: 5px 5px 0px 5px;
   flex-wrap: wrap;
 }
 
@@ -127,7 +127,8 @@ body{
 /*Footer Contents*/
 .copyright{
   height: ;
-  Width: 20%;
+  min-Width: 200px;
+  max-width: 50%;
   margin: 0px;
   display: flex;
   align-items: center;
@@ -140,7 +141,6 @@ body{
   display: flex;
   align-items: center;
 }
-
 
 /*Element coloring*/
 .blogname{
@@ -212,7 +212,6 @@ body{
 
 
 
-
   /* add css for nested grid here */
   
 /*  #nestedgrid{
@@ -235,20 +234,3 @@ body{
   /* Content Display Settings of Tertiary Box Containers*/
   
   
-  /* Screens over 900px */
-
-/*  @media(min-width:900px){
-  .mainContainer{
-        display:grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: 250px 600px;
-        grid-template-areas: 
-        "hd hd hd hd hd hd hd hd"
-        "sd sd main main main main main main"
-        "ft ft ft ft ft ft ft ft";
-        border: 2px dashed red;
-    }
-  }
-*/
-
-  /*Testing Area*/
