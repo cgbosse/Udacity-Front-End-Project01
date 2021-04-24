@@ -156,6 +156,7 @@
   .bio{
       padding: 20px;
       text-align: center;
+      ;
   }
 
 
@@ -172,4 +173,5 @@
 
 .links a{
   display: block;
+  font-style: italic;
 }
