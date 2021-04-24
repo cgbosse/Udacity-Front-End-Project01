@@ -1,27 +1,85 @@
+
 body{
-    background-color: black;
+    background-color: white;
 }
 
- /*Element coloring*/
+/*Fonts*/
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Basic Elements*/
+h1{
+  font-size: xx-large;
+}
+
+h2{
+  font-size: x-large;
+}
+
+h3{
+  font-size: large;
+}
+
+p{
+  text-align: justify;
+}
+
+/*rounded corners*/
+
+.mainContainer{
+  border-radius: 25px;
+}
+
+.header{
+  border-radius:25px 25px 0px 0px;
+}
+
+.footer{
+  border-radius: 0px 0px 25px 25px;
+}
+
 .blogname{
-    background-color: slategray;
-    color:white;
-  }
-  
-  .menu{
-    background-color: slategray;
-    color:white;
-  }
-  
-  .content01{
-    grid-area: c01;
-  }
-  
-  .content02{
-    grid-area: c02;
-  }
-  
-  .footer{
-    background-color: slategray;
-    color:white;
-  }
+  border-radius:25px 0px 0px 0px;
+}
+
+.menu{
+  border-radius: 0px 25px 0px 0px;
+}
+
+/*Structuring aid lines*/
+
+.box {
+  width: auto;
+  display: flex;
+  align-items: stretch;
+  align-content: center;
+  justify-content: center;
+
+}
+/*Element coloring*/
+.blogname{
+  background-color: black;
+  color:white;
+}
+
+.menu{
+  background-color: black;
+  color:white;
+  padding: 10px;
+}
+
+.content01{
+  grid-area: c01;
+  background-color: #C0C0C0;
+}
+
+.content02{
+  grid-area: c02;
+  background-color: #C0C0C0;
+}
+
+.footer{
+  background-color: black;
+  color:white;
+}

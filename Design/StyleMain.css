@@ -2,42 +2,6 @@
 
 /*Base Styling*/
 
-/*Fonts*/
-*{
-  font-family:Arial, Helvetica, sans-serif;
-}
-
-
-
-/*rounded corners*/
-
-.mainContainer{
-  border-radius:25px;
-  background-color: whitesmoke;
-
-}
-
-.header{
-  border-radius:25px 25px 0px 0px;
-  background-color: whitesmoke;
-}
-
-.footer{
-  border-radius: 0px 0px 25px 25px;
-  background-color: whitesmoke;
-}
-
-.blogname{
-  border-radius:25px 0px 0px 0px;
-  background-color: whitesmoke;
-}
-
-.menu{
-  border-radius: 0px 25px 0px 0px;
-  background-color: whitesmoke;
-}
-
-
 /*Structure - Small Screen Grid*/
 
 .mainContainer{
@@ -47,33 +11,16 @@
     margin: auto;
     grid-template-columns: repeat(1fr, 7);
     grid-template-rows: 10vh repeat(minmax(auto, auto), 4);
-    grid-gap:;
     grid-template-areas: 
     "hd hd hd hd hd hd hd"
     "c01 c01 c01 c01 c01 c01 c01"
     "c01 c01 c01 c01 c01 c01 c01"
     "c02 c02 c02 c02 c02 c02 c02"
     "ft ft ft ft ft ft ft";
-
   }
 
-/*Structuring aid lines*/
-.mainContainer{
-  border: 2px dashed black;
-
-}
-
-.box {
-  border: 1px dotted red;
-  width: auto;
-  display: flex;
-  align-items: stretch;
-  align-content: center;
-  justify-content: center;
-
-}
-
 /* Named Content Boxes Grid Positioning */
+
 .header{
   grid-area: hd;
   display: flex;
@@ -87,112 +34,109 @@
 .content02{
   grid-area: c02;
   display: flex;
+  align-content: flex-start;
 }
 
 .footer{
   grid-area: ft;
   display: flex;
+  flex-wrap: wrap;
 }
 
-/*Header Contents*/
+/*Header Content*/
 
 .blogname{
-  height:;
+  height: auto;
   Width: 80%;
   margin: 0px;
   display: flex;
-  align-items: center;
+  justify-items:left;
+  padding: 15px;
 
 }
 .menu{
-  height: ;
   Width: 20%;
   margin: 0px;
   display: flex;
   align-items: center;
+  padding: 15px;
 }
 
-/*Content01 Contents*/
+.menu:hover{
+  color: #8F8F8F;
+}
+
+
+/*Content Boxes*/
 
 .content01{
-  padding: 5px;
+  padding: 10px;
+
 }
 
 .content02{
-  padding: 5px 5px 0px 5px;
   flex-wrap: wrap;
 }
 
+/*content02 Structure*/
+.section-title{
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  margin: 10px;
+}
 
-/*Footer Contents*/
-.copyright{
-  height: ;
-  min-Width: 200px;
-  max-width: 50%;
+/*---Footer---*/
+
+/*Footer Menu*/
+
+.bottom-menu{
+  width: 50%;
   margin: 0px;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-
 }
+
+.bottom-menu a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.bottom-menu a:hover{
+  color: #8F8F8F;
+}
+
 .sociallinks{
-  height: ;
-  Width: 80%;
+  width: 50%;
   margin: 0px;
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
-/*Element coloring*/
-.blogname{
-  background-color: slategray;
-  color:white;
+.copyright{
+
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  padding: 10px;
 }
 
-.menu{
-  background-color: slategray;
-  color:white;
-}
+/*---Header---*/
 
-.content01{
-  grid-area: c01;
-}
+/*Menu Elements*/
 
-.content02{
-  grid-area: c02;
-}
-
-.footer{
-  background-color: slategray;
-  color:white;
-}
-
-/*Blogpost Boxes*/
-.postsm{
- border: 1px solid green;
- width: 33%;
- flex-grow: 1;
- align-items: stretch;
- padding: 5px; 
-}
-
-.postmd{
-
-}
-.postlg{
-
-}
-
-/*Hoovering Elements*/
 .dropdown {
   position: relative;
-  display: ;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  top:100%;
-  left:;
+  top: 100%;
   background-color: #f1f1f1;
   min-width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -206,31 +150,47 @@
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Buttons*/
+
+.button {
+  color: white;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  border-radius:25px;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid grey;
+}
+
+.button1:hover {
+  background-color: grey;
+  color: white;
+}
 
 
+.button a{
+  text-decoration: none;
+  color:black;
+}
 
-  /* add css for nested grid here */
-  
-/*  #nestedgrid{
-         display:grid;
-        grid-template-columns: x% x%;
-        grid-template-rows: x%  x% ;
-        grid-gap: x%;	
-        grid-template-areas: 
-        "hd hd hd hd hd hd hd hd"
-        "sd sd main main main main main main"
-        "ft ft ft ft ft ft ft ft";
-        border: *px style color;
-    }
-  } */
-  
-  /* Content Display Settings of Secondary Box Containers*/
-
-  
-  
-  /* Content Display Settings of Tertiary Box Containers*/
-  
-  
+.button a:hover{
+  text-decoration: none;
+  color:white;
+}
