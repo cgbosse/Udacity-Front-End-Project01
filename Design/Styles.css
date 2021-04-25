@@ -1,4 +1,4 @@
 @import "StyleColor.css";
 @import "StyleMain.css";
 @import "StyleComponents.css";
-@import "StyleMediaMed.css" screen and (min-width: 901px);
+@import "StyleMediaMed.css" screen and (min-width: 850px);

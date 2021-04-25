@@ -1,4 +1,4 @@
-@media(min-width:900px){
+@media(min-width: 850px){
     .mainContainer{
       display: grid;
       width: 99%;
@@ -16,7 +16,7 @@
     }
 }
 
-@media(min-width:900px){
+@media(min-width: 850px){
     .post-lg{
       display: grid;
       width: 99%;
@@ -31,7 +31,7 @@
       "gal gal gal gal gal gal gal";
     }
 
-@media(min-width:900px){
+@media(min-width: 1000px){
     .card {
       max-width: 48%;
       border: 1px solid #C0C0C0;
