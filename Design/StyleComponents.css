@@ -59,24 +59,24 @@
     max-width: 100%;
     max-height: 100%;
     display: flex;
-    align-items: stretch;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
 }
 
 .card {
-    max-width: 22%;
     border: 1px solid #C0C0C0;
     padding: 5px;    
     background-color: #C0C0C0;
+    align-items: stretch;
+    flex-grow: 1;
+    margin-bottom: 1%;
   }
 
 .card img{
     max-height: 100%;
     max-width: 100%;
     object-fit: fill;
-  
 }
 
 .desc {
@@ -145,12 +145,12 @@
   #avatar {
     border-radius: 50%;
     max-width: 150px;
-    padding: 20px;
+    padding: 10px;
     }
   
   .basic-info {
       display: block;
-      padding: 20px;
+      padding: 10px;
   }
   
   .bio{
